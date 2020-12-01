@@ -23,6 +23,8 @@ class Shop_Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+
+        //check
         return inflater.inflate(R.layout.fragment_shop_, container, false)
     }
 
