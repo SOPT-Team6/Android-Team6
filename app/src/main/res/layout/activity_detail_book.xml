@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shop_Fragment" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/book_7_img"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Ebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Book"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:textColor="#eb683f"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="여우가 잠든 숲 2"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/fontfamily"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#242424"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="2sp"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/Ebook"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="넬레노이 하우스"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/fontfamily"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#6f6f6f"
+        android:letterSpacing="-0.04"
+        android:lineSpacingExtra="8sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_gravity="center"
+        android:background="#ededed"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/publisher"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/fontfamily"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="8sp"
+        android:text="30여 개국 번역 출간, 600만 부 판매, 독일 베스트 1위
+전 세계를 매혹시킨 미스터리의 여왕 넬레 노이하우스
+시한부 선고를 극복하고 발표한 타우누스 시리즈 2년 만의 최신 대표작
+전 세계 30여 개국 출간, 600만 부 이상 판매
+슈피겔 베스트셀러 1위, 독일 아마존 베스트셀러 1위
+
+조용한 마을을 뒤흔든 의문의 연쇄 살인"
+        android:textColor="#878787"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+</androidx.constraintlayout.widget.ConstraintLayout>
