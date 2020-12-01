@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.activity_search.*
 import kotlinx.android.synthetic.main.fragment_home_.*
 import kotlinx.android.synthetic.main.reading_list.*
 
@@ -102,6 +103,12 @@ class Home_Fragment : Fragment() {
 
         readingAdapter.notifyDataSetChanged()
         newAdapter.notifyDataSetChanged()
+
+        search_button.setOnClickListener{
+            val search_intent= Intent(activity, SearchActivity::class.java)
+            startActivity(search_intent)
+
+        }
 
     }
 
