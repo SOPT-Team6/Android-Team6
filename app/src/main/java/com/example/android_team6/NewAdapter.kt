@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
 class NewAdapter(private val context: Context) : RecyclerView.Adapter<NewViewHolder>() {
-    var data = mutableListOf<BookData>()
+    var data = mutableListOf<NewBookData>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewViewHolder {
         var view = LayoutInflater.from(context).inflate(R.layout.new_book_list, parent, false)

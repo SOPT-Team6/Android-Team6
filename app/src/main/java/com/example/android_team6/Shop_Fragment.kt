@@ -24,7 +24,6 @@ class Shop_Fragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
 
-        //check
         return inflater.inflate(R.layout.fragment_shop_, container, false)
     }
 

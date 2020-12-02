@@ -84,9 +84,9 @@ class Home_Fragment : Fragment() {
         }
 
         readingAdapter.data = mutableListOf(
-            BookData("백설공주에게 죽음을", "넬레노이 하우스 저"),
-            BookData("백설공주에게 죽음을", "넬레노이 하우스 저"),
-            BookData("백설공주에게 죽음을", "넬레노이 하우스 저")
+            BookData("백설공주에게 죽음을", "넬레노이 하우스 저", ""),
+            BookData("백설공주에게 죽음을", "넬레노이 하우스 저", ""),
+            BookData("백설공주에게 죽음을", "넬레노이 하우스 저", "")
         )
 
         newAdapter = activity?.let { NewAdapter(it) }!!
@@ -94,11 +94,11 @@ class Home_Fragment : Fragment() {
         new_rcv.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
 
         newAdapter.data = mutableListOf(
-            BookData("백설공주에게 죽음을", "넬레노이 하우스 저"),
-            BookData("백설공주에게 죽음을", "넬레노이 하우스 저"),
-            BookData("백설공주에게 죽음을", "넬레노이 하우스 저"),
-            BookData("백설공주에게 죽음을", "넬레노이 하우스 저"),
-            BookData("백설공주에게 죽음을", "넬레노이 하우스 저")
+            NewBookData("https://cdn.pixabay.com/photo/2019/07/21/13/04/landscape-4352732_960_720.jpg"),
+            NewBookData("https://cdn.pixabay.com/photo/2019/01/30/08/30/book-3964050_960_720.jpg"),
+            NewBookData("https://cdn.pixabay.com/photo/2019/07/21/13/04/landscape-4352732_960_720.jpg"),
+            NewBookData("https://cdn.pixabay.com/photo/2019/01/30/08/30/book-3964050_960_720.jpg"),
+            NewBookData("https://cdn.pixabay.com/photo/2019/07/21/13/04/landscape-4352732_960_720.jpg")
         )
 
         readingAdapter.notifyDataSetChanged()
