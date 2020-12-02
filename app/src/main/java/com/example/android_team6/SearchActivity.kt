@@ -68,7 +68,7 @@ class SearchActivity : AppCompatActivity() {
         })
 
         //<-눌렀을때 intent
-        back_ic.setOnClickListener{
+        back_btn.setOnClickListener{
             val back_intent= Intent(this, MainActivity::class.java)
             startActivity(back_intent)
 
